@@ -1,5 +1,10 @@
 Revision history for App-ListSoftwareLicenses
 
+0.02    2014-06-29 (SHARYANTO)
+
+        - Include license text data (in field 'text').
+
+
 0.01    2014-06-29 (SHARYANTO)
 
         - First release.
