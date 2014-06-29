@@ -52,11 +52,12 @@ my $table_spec = {
             index    => 6,
             sortable => 1,
         },
-        #fulltext => {
-        #    schema   => 'str*',
-        #    index    => 7,
-        #    sortable => 1,
-        #},
+        text => {
+            schema   => 'str*',
+            index    => 7,
+            sortable => 1,
+            include_by_default => 0,
+        },
     },
     pk => 'module',
 };
@@ -74,13 +75,13 @@ my $table_data = $cache->compute(
             next if $row->[0] ~~ @excluded;
             Module::Load::load($row->[0]);
             my $o = $row->[0]->new({holder => 'Copyright_Holder'});
-            $row->[1]  = $o->meta_name;
-            $row->[2]  = $o->meta2_name;
-            $row->[3]  = $o->name;
-            $row->[4]  = $o->version;
-            $row->[5]  = $o->url;
-            $row->[6]  = $o->notice;
-            #$row->[7] = $o->fulltext;
+            $row->[1] = $o->meta_name;
+            $row->[2] = $o->meta2_name;
+            $row->[3] = $o->name;
+            $row->[4] = $o->version;
+            $row->[5] = $o->url;
+            $row->[6] = $o->notice;
+            $row->[7] = $o->license;
         }
         $data;
     });
