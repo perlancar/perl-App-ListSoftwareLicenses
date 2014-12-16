@@ -1,12 +1,12 @@
 package App::ListSoftwareLicenses;
 
+# DATE
+# VERSION
+
 use 5.010001;
 use strict;
 use warnings;
 use experimental 'smartmatch';
-
-# DATE
-# VERSION
 
 use CHI;
 
@@ -108,7 +108,7 @@ $SPEC{list_software_licenses}{examples} = [
 ];
 
 1;
-# ABSTRACT: List all Software::License's
+# ABSTRACT:
 
 =head1 SEE ALSO
 
