@@ -74,7 +74,14 @@ my $table_data = $cache->compute(
         for my $row (@$data) {
             next if $row->[0] ~~ @excluded;
             Module::Load::load($row->[0]);
-            my $o = $row->[0]->new({holder => 'Copyright_Holder'});
+            my $o;
+            eval { $o = $row->[0]->new({holder => 'Copyright_Holder'}) };
+            if ($@) {
+                # some modules are not really software license, like
+                # Software::License::CCpack which are just the main/placeholder
+                # module for the Software-License-CCpack distribution.
+                next;
+            }
             $row->[1] = $o->meta_name;
             $row->[2] = $o->meta2_name;
             $row->[3] = $o->name;
