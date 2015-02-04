@@ -1,5 +1,13 @@
 Revision history for App-ListSoftwareLicenses
 
+0.04    2015-02-04 (PERLANCAR)
+
+	- Ignore failure in instantiating modules like
+	  Software::License::CCpack (which is just a main/placeholder
+	  module for the Software-License-CCpack distribution of collection
+	  of CC licenses) [RT#101885, Thanks Slaven].
+
+
 0.03     2014-08-16 (SHARYANTO) - Happy 19th CPAN Day!
 
          - [build] CLI scripts are now generated automatically using
