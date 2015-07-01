@@ -106,7 +106,7 @@ my $res = gen_read_table_func(
 die "Can't generate list_software_licenses function: $res->[0] - $res->[1]"
     unless $res->[0] == 200;
 
-$SPEC{list_software_licenses}{args}{q}{pos} = 0;
+$SPEC{list_software_licenses}{args}{query}{pos} = 0;
 $SPEC{list_software_licenses}{examples} = [
     {
         argv    => [qw/perl/],
