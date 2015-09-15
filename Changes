@@ -1,5 +1,10 @@
 Revision history for App-ListSoftwareLicenses
 
+0.07    2015-09-15 (PERLANCAR)
+
+	- [ux] Change -V to -l (mnemonic: ls -l).
+
+
 0.06    2015-09-03 (PERLANCAR)
 
 	- No functional changes.
