@@ -1,9 +1,9 @@
-0.07    2015-09-15 (PERLANCAR)
+0.07    2015-09-15  Released-By: PERLANCAR
 
 	- [ux] Change -V to -l (mnemonic: ls -l).
 
 
-0.06    2015-09-03 (PERLANCAR)
+0.06    2015-09-03  Released-By: PERLANCAR
 
 	- No functional changes.
 
@@ -12,12 +12,12 @@
 	  requirement.
 
 
-0.05    2015-07-15 (PERLANCAR)
+0.05    2015-07-15  Released-By: PERLANCAR
 
 	- Adjust to Perinci::Sub::Gen::AccessTable 0.46.
 
 
-0.04    2015-02-04 (PERLANCAR)
+0.04    2015-02-04  Released-By: PERLANCAR
 
 	- Ignore failure in instantiating modules like
 	  Software::License::CCpack (which is just a main/placeholder
@@ -32,11 +32,11 @@
            generated script is not as polished as it should be. Stay tuned.
 
 
-0.02    2014-06-29 (SHARYANTO)
+0.02    2014-06-29  Released-By: SHARYANTO
 
         - Include license text data (in field 'text').
 
 
-0.01    2014-06-29 (SHARYANTO)
+0.01    2014-06-29  Released-By: SHARYANTO
 
         - First release.
