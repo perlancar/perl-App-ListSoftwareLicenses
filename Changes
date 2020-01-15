@@ -25,7 +25,7 @@
 	  of CC licenses) [RT#101885, Thanks Slaven].
 
 
-0.03     2014-08-16 (SHARYANTO) - Happy 19th CPAN Day!
+0.03     2014-08-16  Released-By: SHARYANTO; Note: Happy 19th CPAN Day!
 
          - [build] CLI scripts are now generated automatically using
            Dist::Zilla::Plugin::ScriptFromFunc. The plugin is still at 0.01 so the
@@ -40,3 +40,4 @@
 0.01    2014-06-29  Released-By: SHARYANTO
 
         - First release.
+
